@@ -12,7 +12,6 @@ END ALU;
 architecture alu_arch of ALU is
 begin
 process(A,B,Op_code)
-begin
 case Op_code is
 when "000" => Y<=A;
 
