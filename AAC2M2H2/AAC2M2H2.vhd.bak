@@ -1,0 +1,87 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity FIFO8x9 is
+   port(
+      clk, rst:		in std_logic;
+      RdPtrClr, WrPtrClr:	in std_logic;    
+      RdInc, WrInc:	in std_logic;
+      DataIn:	 in std_logic_vector(8 downto 0);
+      DataOut: out std_logic_vector(8 downto 0);
+      rden, wren: in std_logic
+	);
+end entity FIFO8x9;
+
+architecture RTL of FIFO8x9 is
+	--signal declarations
+	type fifo_array is array(7 downto 0) of std_logic_vector(8 downto 0);  -- makes use of VHDL’s enumerated type
+	signal fifo:  fifo_array;
+	signal wrptr, rdptr: unsigned(2 downto 0);
+	--signal en: std_logic_vector(7 downto 0);
+	signal dmuxout: std_logic_vector(8 downto 0);
+begin
+-------------------------------------------
+
+reset_all : process(rst) -- To reset all
+ begin
+  if (rst = '1') AND rising_edge(clk) then
+    for i in 0 to 7 loop
+      fifo(i) <= "000000000";
+    end loop;
+  end if;
+end process reset_all;
+-------------------------------------------
+
+reset_rdptr : process(RdPtrClr) -- To reset the read pointer
+ begin
+  if (RdPtrClr = '1') AND rising_edge(clk) then
+    rdptr <= "000";
+  end if;
+ end process reset_rdptr;
+-------------------------------------------
+
+reset_wrptr : process(WrPtrClr) -- To reset the write pointer
+ begin
+  if (WrPtrClr = '1') AND rising_edge(clk) then
+    wrptr <= "000";
+  end if;
+ end process reset_wrptr;
+-------------------------------------------
+
+increment_rdptr : process(rdinc, clk) -- Read pointer incrementing
+ begin
+  if (rdinc = '1') AND rising_edge(clk) then
+    rdptr <= rdptr + 1;
+  end if;
+ end process increment_rdptr;
+-------------------------------------------
+
+increment_wrptr : process(wrinc, clk) --  Write pointer incrementing
+ begin
+  if (wrinc = '1') AND rising_edge(clk) then
+    wrptr <= wrptr + 1;
+  end if;
+ end process increment_wrptr;
+-------------------------------------------
+
+mem_write : process(wren) --  write memory
+ begin
+  if (wren = '1') then
+    fifo(to_integer(wrptr)) <= DataIn;
+  end if;
+ end process mem_write;
+
+-------------------------------------------
+
+mem_read : process(rden) -- Read memory
+ begin
+  if (rden = '1') then
+    DataOut <= fifo(to_integer(rdptr));
+  else
+    DataOut <= "ZZZZZZZZZ";
+  end if;
+ end process mem_read;
+-------------------------------------------
+
+end architecture RTL;
