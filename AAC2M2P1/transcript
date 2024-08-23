@@ -1,0 +1,110 @@
+# Loading project AAC2M2P1
+# Compile of AAC2M2P1.vhd was successful.
+# Compile of AAC2M2P1_tb.vhdp was successful.
+vsim work.aac2m2p1_tb(behavioral)
+# vsim work.aac2m2p1_tb(behavioral) 
+# Start time: 22:05:26 on Aug 22,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m2p1_tb(behavioral)
+# ** Error: (vsim-3173) Entity '/home/samba/Documents/FPGA_coursera/AAC2M2P1/work.aac2m2p1' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 22:05:26 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 6
+vsim work.aac2m2p1_tb
+# vsim work.aac2m2p1_tb 
+# Start time: 22:05:42 on Aug 22,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m2p1_tb(behavioral)
+# ** Error: (vsim-3173) Entity '/home/samba/Documents/FPGA_coursera/AAC2M2P1/work.aac2m2p1' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 22:05:42 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Compile of AAC2M2P1.vhd failed with 6 errors.
+# Compile of AAC2M2P1.vhd failed with 6 errors.
+# Compile of AAC2M2P1.vhd failed with 6 errors.
+# Compile of AAC2M2P1.vhd failed with 2 errors.
+# Compile of AAC2M2P1.vhd failed with 2 errors.
+# Compile of AAC2M2P1.vhd failed with 2 errors.
+# Compile of AAC2M2P1.vhd failed with 3 errors.
+# Compile of AAC2M2P1.vhd failed with 3 errors.
+# Compile of AAC2M2P1.vhd failed with 2 errors.
+# Compile of AAC2M2P1.vhd was successful.
+vsim work.aac2m2p1_tb
+# vsim work.aac2m2p1_tb 
+# Start time: 22:13:44 on Aug 22,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m2p1_tb(behavioral)
+# Loading work.aac2m2p1(binary_counter)
+add wave -position end  sim:/aac2m2p1_tb/CP_tb
+add wave -position end  sim:/aac2m2p1_tb/SR_tb
+add wave -position end  sim:/aac2m2p1_tb/P_tb
+add wave -position end  sim:/aac2m2p1_tb/PE_tb
+add wave -position end  sim:/aac2m2p1_tb/CEP_tb
+add wave -position end  sim:/aac2m2p1_tb/CET_tb
+add wave -position end  sim:/aac2m2p1_tb/Q_tb
+add wave -position end  sim:/aac2m2p1_tb/TC_tb
+add wave -position end  sim:/aac2m2p1_tb/simend
+add wave -position end  sim:/aac2m2p1_tb/ValidCheck
+add wave -position end  sim:/aac2m2p1_tb/ROM
+add wave -position end  sim:/aac2m2p1_tb/delay
+add wave -position end  sim:/aac2m2p1_tb/Points
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# ** Note: This simulation is complete
+#    Time: 525 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# Project file /home/samba/Documents/FPGA_coursera/AAC2M2P1/AAC2M2P1.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# End time: 22:17:54 on Aug 22,2024, Elapsed time: 0:04:10
+# Errors: 0, Warnings: 10
