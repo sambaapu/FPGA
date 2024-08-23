@@ -24,6 +24,6 @@ if(rising_edge(clock)) then
 		reg(to_integer(unsigned(address))) <= data;
 	end if;
 end if;
-q <= reg(to_integer(unsigned(address)));
+q <= array_reg(to_integer(unsigned(address)));
 end process;
 end architecture;

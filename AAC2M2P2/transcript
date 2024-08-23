@@ -1,0 +1,40 @@
+# Loading project AAC2M2P2
+# Compile of AAC2M2P2_tb.vhdp was successful.
+# Compile of AAC2M2P2.vhd was successful.
+# Compile of AAC2M2P2.vhd failed with 1 errors.
+# Compile of AAC2M2P2.vhd failed with 1 errors.
+# Compile of AAC2M2P2_tb.vhdp was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of AAC2M2P2.vhd failed with 2 errors.
+# Compile of AAC2M2P2.vhd failed with 1 errors.
+# Compile of AAC2M2P2.vhd was successful.
+# Compile of AAC2M2P2.vhd was successful.
+# Compile of AAC2M2P2_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.aac2m2p2_tb
+# vsim work.aac2m2p2_tb 
+# Start time: 12:34:33 on Aug 23,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m2p2_tb(behavioral)
+# Loading work.ram128_32(ram_arch)
+add wave -position end  sim:/aac2m2p2_tb/clock_tb
+add wave -position end  sim:/aac2m2p2_tb/address_tb
+add wave -position end  sim:/aac2m2p2_tb/data_tb
+add wave -position end  sim:/aac2m2p2_tb/wren_tb
+add wave -position end  sim:/aac2m2p2_tb/q_tb
+add wave -position end  sim:/aac2m2p2_tb/simend
+add wave -position end  sim:/aac2m2p2_tb/ValidCheck
+add wave -position end  sim:/aac2m2p2_tb/ROM
+add wave -position end  sim:/aac2m2p2_tb/delay
+add wave -position end  sim:/aac2m2p2_tb/Points
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /aac2m2p2_tb/RAM_Test
+# ** Note: This simulation is complete
+#    Time: 513135 ns  Iteration: 0  Instance: /aac2m2p2_tb
