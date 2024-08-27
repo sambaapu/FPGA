@@ -1,0 +1,75 @@
+# Loading project AAC2M3P1
+# Compile of AAC2M3P1.v failed with 2 errors.
+# Compile of AAC2M3P1_tb.vp was successful.
+# Compile of vector.out failed with 1 errors.
+# 3 compiles, 2 failed with 3 errors.
+# Compile of AAC2M3P1_tb.vp was successful.
+# Compile of AAC2M3P1.v failed with 2 errors.
+# Compile of AAC2M3P1.v failed with 2 errors.
+# Compile of AAC2M3P1.v failed with 2 errors.
+# Compile of AAC2M3P1.v was successful.
+vsim work.AAC2M3P1_tb
+# vsim work.AAC2M3P1_tb 
+# Start time: 20:47:48 on Aug 26,2024
+# Loading work.AAC2M3P1_tb
+# Loading work.Comparator2
+add wave -position end  sim:/AAC2M3P1_tb/delay
+add wave -position end  sim:/AAC2M3P1_tb/a_tb
+add wave -position end  sim:/AAC2M3P1_tb/b_tb
+add wave -position end  sim:/AAC2M3P1_tb/y_tb
+add wave -position end  sim:/AAC2M3P1_tb/i
+add wave -position end  sim:/AAC2M3P1_tb/j
+add wave -position end  sim:/AAC2M3P1_tb/ErrorCount
+add wave -position end  sim:/AAC2M3P1_tb/score
+add wave -position end  sim:/AAC2M3P1_tb/FirstError
+add wave -position end  sim:/AAC2M3P1_tb/ValidCheck
+add wave -position end  sim:/AAC2M3P1_tb/testresults
+add wave -position end  sim:/AAC2M3P1_tb/vector
+add wave -position end  sim:/AAC2M3P1_tb/address
+add wave -position end  sim:/AAC2M3P1_tb/data
+add wave -position end  sim:/AAC2M3P1_tb/rom
+run -all
+# This simulation is complete
+# ** Note: $stop    : /home/samba/Documents/FPGA/AAC2M3P1/AAC2M3P1_tb.vp(113)
+#    Time: 170 ns  Iteration: 0  Instance: /AAC2M3P1_tb
+# Break in Module AAC2M3P1_tb in file /home/samba/Documents/FPGA/AAC2M3P1/AAC2M3P1_tb.vp
+quit -sim
+# End time: 20:50:00 on Aug 26,2024, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 10
+# reading /home/samba/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project AAC2M3P3
+# Compile of AAC2M3P3.v failed with 1 errors.
+# Compile of AAC2M3P3.v failed with 1 errors.
+# Compile of vector.out failed with 1 errors.
+# Compile of AAC2M3P3_tb.vp was successful.
+# Compile of AAC2M3P3.v was successful.
+vsim work.AAC2M3P1_tb
+# vsim work.AAC2M3P1_tb 
+# Start time: 20:58:13 on Aug 26,2024
+# Loading work.AAC2M3P1_tb
+# Loading work.find_errors
+add wave -position end  sim:/AAC2M3P1_tb/delay
+add wave -position end  sim:/AAC2M3P1_tb/a_tb
+add wave -position end  sim:/AAC2M3P1_tb/c_tb
+add wave -position end  sim:/AAC2M3P1_tb/b_tb
+add wave -position end  sim:/AAC2M3P1_tb/i
+add wave -position end  sim:/AAC2M3P1_tb/j
+add wave -position end  sim:/AAC2M3P1_tb/ErrorCount
+add wave -position end  sim:/AAC2M3P1_tb/score
+add wave -position end  sim:/AAC2M3P1_tb/FirstError
+add wave -position end  sim:/AAC2M3P1_tb/ValidCheck
+add wave -position end  sim:/AAC2M3P1_tb/testresults
+add wave -position end  sim:/AAC2M3P1_tb/vector
+add wave -position end  sim:/AAC2M3P1_tb/address
+add wave -position end  sim:/AAC2M3P1_tb/data
+add wave -position end  sim:/AAC2M3P1_tb/rom
+run -all
+# This simulation is complete
+# ** Note: $stop    : /home/samba/Documents/FPGA/AAC2M3P3/AAC2M3P3_tb.vp(115)
+#    Time: 10250 ns  Iteration: 0  Instance: /AAC2M3P1_tb
+# Break in Module AAC2M3P1_tb in file /home/samba/Documents/FPGA/AAC2M3P3/AAC2M3P3_tb.vp
+quit -sim
+# End time: 20:59:11 on Aug 26,2024, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 9
+# reading /home/samba/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project AAC2M3P4
